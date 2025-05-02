@@ -1,41 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Priyanshu's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Priyanshu | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Priyanshu</h1>
-    <nav>
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <h1>Priyanshu</h1>
       <ul>
+        <!-- Add this inside the nav .container, after the <ul> -->
+        <button id="darkModeToggle">🌙 Dark Mode</button>
+
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-  </header>
+      
+    </div>
+  </nav>
 
-  <section id="about">
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Hello, I'm Priyanshu</h1>
+    <p>A passionate Web Developer</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container">
     <h2>About Me</h2>
-    <p>I am an aspiring web developer learning fast!</p>
+    <p>I am a student at IIT Kharagpur, exploring the world of web development and building cool stuff along the way. I love combining design with code to create meaningful user experiences.</p>
   </section>
 
-  <section id="projects">
+  <!-- Skills Section -->
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">Git & GitHub</div>
+      <div class="skill-box">Responsive Design</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container">
     <h2>Projects</h2>
-    <p>Coming soon...</p>
+    <div class="projects">
+      <div class="project-box">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio website showcasing my work and skills.</p>
+      </div>
+      <div class="project-box">
+        <h3>To-Do List App</h3>
+        <p>A simple JavaScript app to add and manage daily tasks with localStorage support.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: priyanshu@example.com</p>
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:priyanshu@example.com">priyanshu@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">yourusername</a></p>
+    <p>GitHub: <a href="https://github.com/prisam2710" target="_blank">prisam2710</a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Priyanshu</p>
+    <p>&copy; 2025 Priyanshu. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
